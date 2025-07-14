@@ -155,6 +155,9 @@ client.on("interactionCreate", async (interaction) => {
 
 // Tratamento de erro para o login
 client.login(DISCORD_TOKEN).catch((error) => {
+  console.log("DISCORD_TOKEN", DISCORD_TOKEN);
+  console.log("CLIENT_ID", CLIENT_ID);
+  console.log("GUILD_ID", GUILD_ID);
   console.error("Erro ao fazer login no Discord:", error.message);
   console.log("Container continuará rodando para testes...");
 
